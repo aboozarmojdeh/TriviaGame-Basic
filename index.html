@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Trivia Game | Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!--//////////////////Start Up Page//////////-->
+
+
+    <div id="startScreen" class="card bg-dark text-white">
+        <img class="card-img" src="./assets/images/Startup.jpg" width="50px" height="400px" alt="Card image">
+        <div class="card-img-overlay">
+
+            <div class="textAnimated">
+
+
+                <div class="a1">Welcome</div>
+
+                <div class="a1">
+                    <span>to Quick JavaScript Quiz</span>
+                </div>
+            </div>
+
+
+
+
+
+            <button id="startUpBtn" type="button" class="btn btn-primary">START</button>
+        </div>
+    </div>
+
+
+
+    <!--////////////////////////////////////////-->
+
+    <!--//////////////////Quiz Page//////////-->
+
+
+    
+    <div class="quizPage jumbotron jumbotron-fluid">
+        <div class="container quizes">
+
+            <div id="quizScreen" >
+                <article>
+                    <h1 id="timer">Time Remaining:
+                        <span id="counterText">60 Seconds</span>
+                    </h1>
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--////////////////////////////////////////-->
+
+
+    <!--//////////////////Submitted Page//////////-->
+
+    <div id="submitScreen" class="submitPage card bg-dark text-white">
+        <img class="card-img" src="./assets/images/Startup.jpg" width="50px" height="400px" alt="Card image">
+        <div class="card-img-overlay">
+
+
+       
+
+
+                <div class="textAnimated">
+
+
+                    <div class="a1">All Done!</div>
+
+                    <div class="a1">
+                        <span>Check Your Score</span>
+                    </div>
+                </div>
+                <br>
+<div class="results">
+                <p id="correctAnswertxt">Correct Answers:
+                    <span id="correctAnswerscr">0</span>
+                </p>
+                <p id="incorrectAnswertxt">Incorrect Answers:
+                    <span id="incorrectAnswerscr">0</span>
+                </p>
+                <p id="unAnsweredtxt">Unanswered:
+                    <span id="unAnsweredscr">0</span>
+                </p>
+            </div>
+                <button id="restartBtn" type="button" class="btn btn-primary" onclick="reStart()">Restart</button>
+
+            </div>
+       
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="./assets/javascript/app.js"></script>
+</body>
+
+</html>
